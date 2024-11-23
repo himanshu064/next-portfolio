@@ -1,0 +1,15 @@
+#header-right-sound-btn {
+  position: relative;
+  font-size: .875em;
+  height: 3.2em;
+  width: 3.2em;
+  border: none;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

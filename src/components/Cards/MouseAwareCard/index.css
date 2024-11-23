@@ -1,0 +1,37 @@
+.card {
+  width: 300px;
+  height: 200px;
+  margin: 50px auto;
+  background-image: url("https://source.unsplash.com/600x400/?nature,landscape");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  transition: background-position 0.1s ease-out;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.card-content {
+  z-index: 1;
+  position: relative;
+  backdrop-filter: blur(4px);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-content p {
+  margin: 0.5rem 0 0;
+}

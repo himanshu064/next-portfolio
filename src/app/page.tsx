@@ -1,9 +1,14 @@
 "use client";
 
 import React from "react";
-import { CreativeButton, SVGScrollPath } from "@/components";
-import ArrowSlideButton from "@/components/ArrowSlideButton";
-import DotAnimatedButton from "@/components/DotAnimatedButton";
+import {
+  CreativeButton,
+  SVGScrollPath,
+  ArrowSlideButton,
+  DotAnimatedButton,
+  PositionAwareButton,
+  MouseAwareCard,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -13,6 +18,9 @@ export default function Home() {
       <CreativeButton />
 
       <ArrowSlideButton />
+
+      <PositionAwareButton />
+      <MouseAwareCard />
 
       <div className="!mt-4">
         <DotAnimatedButton />

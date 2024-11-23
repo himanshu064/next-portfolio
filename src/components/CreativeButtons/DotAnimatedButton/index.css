@@ -1,0 +1,71 @@
+#home-reel-cta {
+  display: flex;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  padding: 1em 1.5em 1em 1.625em;
+  align-items: center;
+  gap: 1em;
+  border-radius: 5.3125em;
+  font-size: clamp(0.875rem, 1vw, 1.75rem);
+  background: #fff;
+  font-family: Aeonik;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 3.375em;
+  font-weight: 500;
+  pointer-events: auto;
+  color: var(--project-details-btn-text);
+  grid-column: 7 / span 6;
+  margin-top: 3em;
+  opacity: 0;
+  box-shadow: 0 6px 10px #0000000a, 0 2px 4px #0000000a;
+  transition: background cubic-bezier(0.35, 0, 0, 1) 0.2s;
+  will-change: transform;
+}
+#home-reel-cta:hover {
+  color: #fff;
+  background: #1a2ffb;
+  transition: background cubic-bezier(0.35, 0, 0, 1) 0.5s 0.3s;
+}
+#home-reel-cta-dot {
+  display: inline-block;
+  position: relative;
+  width: 0.5em;
+  height: 0.5em;
+  background: #000;
+  border-radius: 100px;
+  z-index: 1;
+  transition: background cubic-bezier(0.35, 0, 0, 1) 0.5s,
+    transform cubic-bezier(0.35, 0, 0, 1) 0.4s;
+}
+#home-reel-cta-text {
+  position: relative;
+  z-index: 1;
+  transition: color cubic-bezier(0.35, 0, 0, 1) 0.5s,
+    transform cubic-bezier(0.35, 0, 0, 1) 0.4s;
+}
+#home-reel-cta-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 1em;
+  height: 1.2em;
+  width: 1.2em;
+  color: #1a2ffb;
+  border-radius: 100%;
+  transform: translate3d(3em, 0, 0);
+  transition: transform cubic-bezier(0.4, 0, 0, 1) 0.4s;
+  z-index: 1;
+}
+#home-reel-cta:hover #home-reel-cta-dot {
+  transform: translate3d(3em, 0, 0) scale(20);
+  background: #1a2ffb;
+}
+#home-reel-cta:hover #home-reel-cta-text {
+  transform: translate3d(-1.5em, 0, 0);
+}
+#home-reel-cta:hover #home-reel-cta-arrow {
+  transform: translateZ(0);
+}
