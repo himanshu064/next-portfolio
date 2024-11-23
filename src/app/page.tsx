@@ -9,6 +9,7 @@ import {
   PositionAwareButton,
   MouseAwareCard,
 } from "@/components";
+import AnimatedImageCard from "@/components/AnimatedImageCard";
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
       <div className="!mt-4">
         <DotAnimatedButton />
       </div>
+
+      <AnimatedImageCard />
 
       <div style={{ height: "2000px" }} />
     </>
