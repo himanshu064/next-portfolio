@@ -11,6 +11,8 @@ import {
 } from "@/components";
 import AnimatedImageCard from "@/components/AnimatedImageCard";
 import StyledCursor from "@/components/StyledCursor/indext";
+import TextWheelButton from "@/components/CreativeButtons/TextWheelButton";
+import NextPageScroller from "@/components/NextPageScroller";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <CreativeButton />
 
       <ArrowSlideButton />
+
+      <TextWheelButton />
 
       <PositionAwareButton />
       <MouseAwareCard />
@@ -33,6 +37,9 @@ export default function Home() {
       <StyledCursor />
 
       <div style={{ height: "2000px" }} />
+      <div className="mb-10">
+        <NextPageScroller />
+      </div>
     </>
   );
 }

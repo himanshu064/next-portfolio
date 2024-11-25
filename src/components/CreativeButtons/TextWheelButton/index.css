@@ -1,0 +1,62 @@
+.btn {
+  width: 160px;
+  height: 50px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn span {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.3s;
+  border: none !important;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: fit-content !important;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: fit-content !important;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+}
+
+.arrow {
+  opacity: 0;
+  scale: 0;
+  transition: opacity 0.3s, scale 0.3s;
+}
+
+.btn:hover .arrow {
+  opacity: 1;
+  scale: 1;
+}
