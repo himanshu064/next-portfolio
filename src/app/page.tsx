@@ -10,6 +10,7 @@ import {
   MouseAwareCard,
 } from "@/components";
 import AnimatedImageCard from "@/components/AnimatedImageCard";
+import StyledCursor from "@/components/StyledCursor/indext";
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
       </div>
 
       <AnimatedImageCard />
+
+      <StyledCursor />
 
       <div style={{ height: "2000px" }} />
     </>
